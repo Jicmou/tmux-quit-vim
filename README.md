@@ -1,6 +1,7 @@
 ## Tmux Quit Vim
 
-Exit all (neo)vim windows in your tmux sessions
+Exit all (neo)vim windows in your tmux sessions.
+
 Inspired by [ddelnano/tmux-vim-exit](https://github.com/ddelnano/tmux-vim-exit)
 
 ## Usage

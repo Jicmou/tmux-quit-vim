@@ -24,3 +24,5 @@ terminate_vim_in_sessions() {
     terminate_vim_in_windows
   done
 }
+
+terminate_vim_in_sessions
