@@ -5,9 +5,8 @@ terminate_vim_in_current_session() {
     grep 'vim' |
     awk '/[0-9]+/{ print $1 }' |
     while read -r paneId; do
-      tmux select-pane -t "$paneId"
-      tmux send-keys :wqall
-      tmux send-keys Enter
+      tmux send-keys -t $paneId :wqall # Save and quit all windows
+      tmux send-keys -t $paneId Enter  # Send Enter to confirm
     done
 }
 
