@@ -1,7 +1,7 @@
 #! /usr/bin/bash
 
 terminate_vim_in_current_session() {
-  tmux list-panes -F "#{pane_id} #{pane_current_command}" |
+  tmux list-panes -F "#{pane_id} #{pane_current_command} #{pane_start_command}" |
     grep 'vim' |
     awk '/[0-9]+/{ print $1 }' |
     while read -r paneId; do
